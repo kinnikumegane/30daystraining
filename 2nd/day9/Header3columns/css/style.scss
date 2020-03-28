@@ -1,0 +1,149 @@
+$layout-width-inner: 1366px;
+
+$breakpoints:(
+    "sp": "screen and (max-width: 767px)",
+    "tab": "screen and (max-width: #{$layout-width-inner - 1px})",
+    "pc": "screen and (min-width: #{$layout-width-inner})",
+);
+
+// メディアクエリー
+@mixin mq($breakpoint: sp) {
+
+    @media #{map-get($breakpoints, $breakpoint)} {
+  
+      @content;
+    }
+}
+
+body{
+
+    margin: 0;
+
+    .inner{
+        width: 1366px;
+        height: 700px;
+        background: transparent url('/img/mainvisual.png') 0% 0% no-repeat padding-box;
+
+        text-align: center;
+
+        @include mq('tab') {
+            width: 100%;
+        }
+
+        .headtop{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+
+            height: 100px;
+            width: 100%;
+            background: #3F51B5 0% 0% no-repeat padding-box;
+
+            & .logo{
+                margin-left: 45px;
+            }
+
+            & .nav{
+
+                @include mq('tab') {
+                    display: none;
+                }
+
+                & ul{
+                    display:flex;
+                    justify-content: center;
+            
+                    & li{
+                        list-style: none;
+                        width: 100px;
+                        color:white;
+                    }
+                }
+            }
+            
+            & .contact{
+
+                margin-right: 151px;
+
+                @include mq('tab') {
+                    margin-right: 3rem;
+                }
+
+                & input{
+                    background: #E81919 0% 0% no-repeat padding-box;
+                    box-shadow: 0px 3px 6px #000029;
+                    border-radius: 8px;
+                    opacity: 1;
+
+                    width: 124px;
+                    height: 48px;
+
+                    color: white;
+
+                    font-family: Yu Gothic;
+                    font-size: 18px;
+                    border:0;
+
+                    margin-top:12px;
+                }
+
+                & p{
+                    color:white;
+                    margin-bottom:17px;
+                    font-size: 14px;
+                }
+            }
+
+        }
+
+        & h2{
+            margin-top: 149px;
+            font-size: 68px;
+            margin-bottom: 0px;
+
+            @include mq('tab') {
+                font-size: 50px;
+            }
+
+            @include mq('sp') {
+                font-size: 40px;
+            }
+        }
+
+        & h4{
+            margin-top: 12px;
+            font-size: 38px;
+        
+            @include mq('tab') {
+                font-size: 30px;
+            }
+
+            @include mq('sp') {
+                font-size: 20px;
+            }
+        }
+
+        & input{
+            width: 390px;
+            height: 83px;
+            background: #3F51B5 0% 0% no-repeat padding-box;
+            box-shadow: 0px 3px 6px #000029;
+            border-radius: 12px;
+            opacity: 1;
+
+            border: 0;
+            font-size: 38px;
+            color:white;
+
+            @include mq('tab') {
+                font-size: 30px;
+                height: 70px;
+            }
+
+            @include mq('sp') {
+                font-size: 20px;
+                height: 60px;
+            }
+        }
+    }
+}

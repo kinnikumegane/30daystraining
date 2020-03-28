@@ -1,0 +1,123 @@
+.heading1 {
+  border-bottom: solid 3px #3F51B5;
+  font-size: 24px;
+  width: 475px;
+}
+
+.heading2 {
+  border-bottom: dashed 3px #3F51B5;
+  font-size: 24px;
+  width: 475px;
+}
+
+.heading3 {
+  line-height: 31px;
+  background-color: #3F51B5;
+  box-sizing: border-box;
+  color: white;
+  font-size: 24px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 475px;
+  height: 41px;
+}
+
+.heading4 {
+  border-bottom: solid 3px #3F51B5;
+  box-sizing: border-box;
+  line-height: 31px;
+  background-color: #7385E9;
+  color: white;
+  font-size: 24px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 475px;
+  height: 41px;
+}
+
+.heading5 {
+  border-left: solid 5px #010079;
+  font-size: 24px;
+  padding-left: 12px;
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
+  width: 475px;
+  height: 36px;
+}
+
+.heading6 {
+  background: linear-gradient(transparent 70%, #DCEE39 70%);
+  display: inline-block;
+  height: 31px;
+  font-size: 24px;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+.btn1 {
+  width: 230px;
+  height: 50px;
+  box-sizing: border-box;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 14px;
+  background: #3F51B5 0% 0% no-repeat padding-box;
+  border-radius: 3px;
+  opacity: 1;
+  color: white;
+  font-size: 16px;
+  text-align: left;
+}
+
+.btn2 {
+  text-decoration: none;
+  width: 230px;
+  height: 50px;
+  box-sizing: border-box;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 14px;
+  background: #3F51B5 0% 0% no-repeat padding-box;
+  border-radius: 3px;
+  opacity: 1;
+  color: white;
+  font-size: 16px;
+  text-align: left;
+}
+
+.btn2 i {
+  margin-right: 12px;
+  float: right;
+  width: 14px;
+  height: 14px;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.btn3 {
+  text-decoration: none;
+  width: 230px;
+  height: 50px;
+  box-sizing: border-box;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 14px;
+  background: #3F51B5 0% 0% no-repeat padding-box;
+  border-radius: 3px;
+  opacity: 1;
+  color: white;
+  font-size: 16px;
+  text-align: left;
+}
+
+.btn3 i {
+  width: 14px;
+  height: 14px;
+  margin-left: 6px;
+}
